@@ -1,0 +1,109 @@
+:root {
+  --background-color: #69CC78;
+  --text-color: #333;
+}
+
+body {
+  font-size: 10px;
+  font-family: Palatino, serif;
+}
+
+#splash {
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#splash #logo {
+  font-size: 5rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#header, #footer {
+  color: white;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+}
+#header, #footer, #main {
+  padding: 1rem 2rem;
+}
+
+#header {
+  padding-top: 3rem;
+}
+.greeting {
+  font-size: 1.1rem;
+}
+
+#header #logo {
+  font-size: 2rem;
+  color: white;
+}
+
+#profile {
+  display: flex;
+  align-items: center;
+}
+#profile .fa-user {
+  color: white;
+  font-size: 2rem;
+}
+#profile p {
+  margin: 0 0 0 0.7rem;
+  font-size: 0.8rem;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+}
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.container tr {
+  height: 2rem;
+  margin-bottom: 5px;
+  background-color: lightgray;
+  border-bottom: 5px solid white;
+  border-radius: 10px;
+}
+.container td {
+  padding: 10px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+#footer .fa-solid,
+#footer .fa-regular {
+  color: white;
+  font-size: 2rem;
+}
+
+#footer .fa-circle {
+  font-size: 3rem;
+}
+
+.footer-plus {
+  position: relative;
+  width: 48px;
+}
+
+.footer-plus .fa-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.footer-plus .fa-plus {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+}
