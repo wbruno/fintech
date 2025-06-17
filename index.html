@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fintech - FIAP</title>
 
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 
@@ -23,37 +25,59 @@
 
 </header><!-- #header -->
 <main id="main">
-  <h1>Últimos Lançamentos</h1>
+  <div class="row">
+    <div class="col-lg-6">
+      <h1>Últimos Lançamentos</h1>
 
-  <div class="container">
-    <table>
-      <tr>
-        <td>19/04</td>
-        <td>Viagem para paris</td>
-        <td>R$ 10.000,90</td>
-        <td><i class="fa-solid fa-plane"></i></td>
-      </tr>
-      <tr>
-        <td>19/04</td>
-        <td>Como treinar seu dragão</td>
-        <td>R$ 120,90</td>
-        <td><i class="fa-solid fa-film"></i></td>
-      </tr>
-      <tr>
-        <td>18/04</td>
-        <td>Conta de gás</td>
-        <td>R$ 24,90</td>
-        <td><i class="fa-solid fa-house"></i></td>
-      </tr>
-      <tr>
-        <td>17/04</td>
-        <td>Almoço</td>
-        <td>R$ 84,90</td>
-        <td><i class="fa-solid fa-utensils"></i></td>
-      </tr>
-    </table>
-    <a href="" class="btn btn-info">Ver todas as informações</a>
-  </div>
+      <table class="table table-responsive">
+        <tr>
+          <td>19/04</td>
+          <td>Viagem para paris</td>
+          <td>R$ 10.000,90</td>
+          <td><i class="fa-solid fa-plane"></i></td>
+        </tr>
+        <tr>
+          <td>19/04</td>
+          <td>Como treinar seu dragão</td>
+          <td>R$ 120,90</td>
+          <td><i class="fa-solid fa-film"></i></td>
+        </tr>
+        <tr>
+          <td>18/04</td>
+          <td>Conta de gás</td>
+          <td>R$ 24,90</td>
+          <td><i class="fa-solid fa-house"></i></td>
+        </tr>
+        <tr>
+          <td>17/04</td>
+          <td>Almoço</td>
+          <td>R$ 84,90</td>
+          <td><i class="fa-solid fa-utensils"></i></td>
+        </tr>
+        <tr>
+          <td>18/04</td>
+          <td>Conta de gás</td>
+          <td>R$ 24,90</td>
+          <td><i class="fa-solid fa-house"></i></td>
+        </tr>
+        <tr>
+          <td>17/04</td>
+          <td>Almoço</td>
+          <td>R$ 84,90</td>
+          <td><i class="fa-solid fa-utensils"></i></td>
+        </tr>
+      </table>
+      <div class="text-center">
+        <a href="" class="btn btn-success">Ver todas as informações</a>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <h2>Resumo Financeiro</h2>
+      <div class="chart-container">
+        <canvas id="financialChart"></canvas>
+      </div>
+    </div><!-- .col-lg-6 -->
+  </div><!-- .row -->
 
 </main><!-- #main -->
 <footer id="footer">
@@ -68,6 +92,9 @@
 
   <i class="fa-solid fa-chart-pie"></i>
 </footer><!-- #footer -->
+
+<script src="./js/chart.js"></script>
+<script src="./js/main.js"></script>
 
 </body>
 </html>

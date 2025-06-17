@@ -6,6 +6,7 @@
 body {
   font-size: 10px;
   font-family: Palatino, serif;
+  min-width: 300px;
 }
 
 #splash {
@@ -21,6 +22,11 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+h2 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
 #header, #footer {
   color: white;
   background-color: var(--background-color);
@@ -29,6 +35,9 @@ body {
 }
 #header, #footer, #main {
   padding: 1rem 2rem;
+}
+#main {
+  padding-bottom: 10%;
 }
 
 #header {
